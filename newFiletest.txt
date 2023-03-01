@@ -1,3 +1,11 @@
+CREATE TABLE STUDENT(
+
+ rno INT(3),
+ name VARCHAR(15),
+ marks FLOAT(6,30)
+
+);
+
 
 
 
