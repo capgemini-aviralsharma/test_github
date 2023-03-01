@@ -1,5 +1,5 @@
 CREATE TABLE STUDENT(
-
+Final commit in the newtest file also known as change 3
  rno INT(3),
  name VARCHAR(15),
  marks FLOAT(6,30)
