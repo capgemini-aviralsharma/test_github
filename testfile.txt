@@ -1,0 +1,42 @@
+CREATE TABLE STUDENT(
+
+ rno INT(3),
+ name VARCHAR(15),
+ marks FLOAT(6,30)
+
+);
+
+
+
+INSERT INTO STUDENT 
+VALUES(2 , "RAL KUMAR" , 14),
+(3,"CHARLES LECLERC" , 17),
+(4,"CHECO",78.223),
+(5,"LMILTION" , 99.123),
+(6,"DAVID",78.123),
+(7,"RAJ PRIYADARSHI", 87.231),
+(8,"MKL",100.000);
+
+INSERT INTO STUDENT(RNO,NAME)
+VALUES(12,"BAKER TROY");
+
+CREATE TABLE EMPLOYEE(
+EID INT(5),
+ENAME VARCHAR(25),
+ESAL FLOAT(10,2),
+EMAIL VARCHAR(25),
+EDEPART INT(5)
+)
+
+
+SELECT table_name
+FROM information_schema.tables
+WHERE table_type='BASE TABLE'
+      AND table_schema = 'your_database_name'
+
+
+ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+
+//Joins Querry
+Select s* , h* from student s JOIN hostel h where s.room = h.room;
