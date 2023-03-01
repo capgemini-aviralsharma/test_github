@@ -1,0 +1,14 @@
+
+
+
+SELECT table_name
+FROM information_schema.tables
+WHERE table_type='BASE TABLE'
+      AND table_schema = 'your_database_name'
+
+
+ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+
+//Joins Querry
+Select s* , h* from student s JOIN hostel h where s.room = h.room;
